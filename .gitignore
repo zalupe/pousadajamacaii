@@ -1,0 +1,13 @@
+.DS_Store
+
+# Arquivos de origem e referência que não são necessários no deploy
+Fotos/
+*.docx
+*.ogg
+historia*.txt
+screenshot-*.png
+
+# Logs e caches locais
+*.log
+node_modules/
+.cache/
