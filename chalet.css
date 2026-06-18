@@ -946,6 +946,43 @@ h3 {
   color: var(--muted);
 }
 
+.story-lead {
+  margin-top: 6px;
+  margin-bottom: 22px;
+  color: var(--ink);
+  font-size: clamp(1.05rem, 1.45vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.story-points {
+  display: grid;
+  gap: 0;
+}
+
+.story-points article {
+  padding: 18px 0;
+  border-top: 1px solid #d7d5e8;
+}
+
+.story-points article:last-child {
+  padding-bottom: 0;
+}
+
+.story-points span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--deep);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.story-points p {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
 .story-image {
   position: relative;
   min-height: 492px;
@@ -1550,6 +1587,10 @@ h3 {
 
   .story-copy {
     padding: 28px 8px;
+  }
+
+  .story-points article {
+    padding: 16px 0;
   }
 
   .story-image {
