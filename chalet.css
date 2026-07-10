@@ -660,11 +660,9 @@ h3 {
 }
 
 .room-actions {
-  display: grid;
+  display: flex;
   width: 100%;
-  max-width: 560px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+  max-width: 320px;
 }
 
 .room-actions .button {
@@ -676,7 +674,7 @@ h3 {
 }
 
 .room-card:not(.room-card-featured) .room-actions {
-  max-width: none;
+  max-width: 320px;
 }
 
 .room-card:not(.room-card-featured) .room-heading h3 {

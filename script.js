@@ -63,29 +63,6 @@ findButton?.addEventListener("click", () => {
   applyGuestFilter();
 });
 
-document.querySelectorAll(".airbnb-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: "airbnb_click",
-      accommodation: link.dataset.room || "Não informado",
-      destination_url: link.href
-    });
-  });
-});
-
-document.querySelectorAll(".booking-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: "booking_click",
-      accommodation: link.dataset.room || "Não informado",
-      booking_category: link.dataset.category || "Não informada",
-      destination_url: link.href
-    });
-  });
-});
-
 document.querySelectorAll("[data-contact]").forEach((link) => {
   link.addEventListener("click", () => {
     window.dataLayer = window.dataLayer || [];
@@ -93,6 +70,7 @@ document.querySelectorAll("[data-contact]").forEach((link) => {
       event: "contact_click",
       contact_channel: link.dataset.contact,
       contact_context: link.dataset.contactContext || "general",
+      accommodation: link.dataset.room || "Não informado",
       destination_url: link.href
     });
   });
